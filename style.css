@@ -269,6 +269,11 @@ header .header-github {
 */
 
 @media only screen and (min-width: 1000px){
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
     .index-banner {
         height: 450px;
     }
@@ -278,14 +283,28 @@ header .header-github {
         width: 600px;
         margin: 0 auto;
     }
+    
+    .index-links div {
+        margin: 20px 10px 0;
+        height: 210px;
+        float: left;
+    }
+    .index-links {
+        overflow:hidden;
+    }
 
     .index-boxlink-square {
-
+        width: calc(25% - 60px) !important;
     }
 
     .index-boxlink-rectangle {
-        
+        width: calc(50% - 60px) !important;
     }
+
+    .index-links div h3 {
+        line-height:210px;
+    }
+    
 }
 
 
@@ -333,3 +352,40 @@ footer ul li a {
 }
 
 
+@media only screen and (min-width: 1000px){
+    /*
+    .footer-software {
+        display: block;
+    }
+    footer ul li p { //he changes the a to a p for my software
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+    }
+   */
+   footer ul {
+        padding-right: 30px;
+    }
+    .footer-sm {
+        height: 45px;
+        width: 300px;
+        padding-top: 75px;
+        float: right;
+        
+    }
+
+    .footer-sm img {
+        display: inline-block;
+        float: left;
+        height: 100%;
+        padding-right:12px;
+        width: calc(33% - 25px);
+        
+    }
+
+    .footer-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
