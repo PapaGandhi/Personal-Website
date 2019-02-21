@@ -160,9 +160,6 @@ header .header-github {
     display:none;
 }
 
-.header-github {
-
-}
 
 @media only screen and (min-width: 1000px){
     header .header-brand {
@@ -271,21 +268,6 @@ main {
     text-transform: uppercase;
 }
 
-/*
-.index-boxlink-square {
-    margin: 16px;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;
-}
-
-.index-boxlink-rectangle {
-    margin: 16px;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;
-}
-*/
 
 @media only screen and (min-width: 1000px){
     .index-links {
