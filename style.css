@@ -160,9 +160,6 @@ header .header-github {
     display:none;
 }
 
-.header-github {
-
-}
 
 @media only screen and (min-width: 1000px){
     header .header-brand {
@@ -230,8 +227,6 @@ main {
     text-shadow: 2px 2px 8px #111;
 }
 
-
-
 .index-banner h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
@@ -243,9 +238,22 @@ main {
     text-shadow: 2px 2px 2px #111;
 }
 
-.index-links div {
-    margin: 16px;
-    width: calc(100% - 32px);
+.index-links {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.index-boxlink-square {
+    flex-basis: 90%;
+    margin:16px;
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+.index-boxlink-rectangle {
+    flex-basis: 90%;
+    margin:16px;
     height: 100px;
     background-color: #f2f2f2;
 }
@@ -260,25 +268,11 @@ main {
     text-transform: uppercase;
 }
 
-/*
-.index-boxlink-square {
-    margin: 16px;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;
-}
-
-.index-boxlink-rectangle {
-    margin: 16px;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;
-}
-*/
 
 @media only screen and (min-width: 1000px){
-    .wrapper {
-        width: 1000px;
+    .index-links {
+        flex-flow: row wrap;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -291,23 +285,19 @@ main {
         width: 600px;
         margin: 0 auto;
     }
-    
-    .index-links div {
-        margin: 20px 10px 0;
-        height: 210px;
-        float: left;
-    }
-
-    .index-links {
-        overflow:hidden;
-    }
 
     .index-boxlink-square {
-        width: calc(25% - 60px) !important;
+        margin: 10px;
+        height:210px;
+        flex-basis: calc(25% - 60px);
+        /* width: calc(25% - 60px) !important; */
     }
 
     .index-boxlink-rectangle {
-        width: calc(50% - 60px) !important;
+        margin:10px;
+        height: 210px;
+        flex-basis: calc(50% - 60px);
+        /* width:  !important; */
     }
 
     .index-links div h3 {
@@ -424,6 +414,95 @@ main {
         line-height: 38px;
     }
 }
+
+/* SOFTWARE */
+
+
+.software-banner {
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-image: url('img/software.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:table;
+}
+
+.software-banner h2 {
+    font-family: 'Saira Extra Condensed', sans-serif, Arial, "Times New Roman";
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.software-brand {
+    font-family: 'Saira Extra Condensed', sans-serif, Arial, "Times New Roman";
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.software-brand-text {
+    display: block;
+    text-align: center;
+    font-family: 'Saira Extra Condensed', sans-serif, Arial, "Times New Roman";
+    font-size: 20px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.software-title-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 1000px){
+    .software-title-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .software-banner {
+        height: 450px;
+    }
+
+    .software-banner h2 {
+        display: block;
+        font-size: 100px;
+        letter-spacing: 4px;
+        font-weight: 700;
+    }
+
+    .software-brand {
+        margin: 31px 0;
+        text-align: left;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        line-height: 38px;
+        float: left;
+    }
+    
+    .software-brand-text {
+        display: block;
+        font-size: 23px;
+        margin: 31px 0;
+        text-align: left;
+        padding: 0px 20px 0px 40px;
+        float: left;
+        padding: 0 18px;
+        line-height: 38px;
+    }
+}
+
 
 
 /* FOOTER*/
